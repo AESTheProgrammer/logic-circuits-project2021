@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -34,7 +34,7 @@ parking_capacity[3] |
 parking_capacity[4] |
 parking_capacity[5] |
 parking_capacity[6] |
-parking_capacity[7]) |
+parking_capacity[7]) &
 entry;
 
 endmodule

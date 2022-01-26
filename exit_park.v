@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -28,6 +28,6 @@ input [2:0] token;
 input [2:0] pattern;
 output [7:0] park_location;
 wire[2:0] park_number;
-decrypt d(exit, token, pattern, park_number);
-exit_parking_lot e(park_number, park_location);
+decrypt d(token, pattern, park_number);
+exit_parking_lot e(exit, park_number, park_location);
 endmodule
